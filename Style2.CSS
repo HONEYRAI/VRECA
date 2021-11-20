@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('https://cdn.dribbble.com/users/2925801/screenshots/14267264/urban_city_-_background_for_video_conferencing_1_4x.jpg');
+	background-size: cover;
+}
+.contact .content
+{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h2{
+	font-size: 40px;
+	font-weight: 500;
+	color: black;
+}
+.contact .content p{
+	font-size: 20px;
+	font-weight: 300;
+   	color: black;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color:#fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contactInfo .box .text a{
+	text-decoration: none;
+}
+
+.container .contactInfo .box .text h3{
+
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm{
+	width:auto;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+
+@media(max-width: 900px)
+{
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactInfo{
+		margin-bottom: 40px;
+	}
+	.container .contactInfo, .contactForm{
+		width: 100%;
+	}
+}
+
+
+
+
+
+.footer{
+	margin: 0;
+	width: auto;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: #ADADAD;
+}
+ 
+.footer p{
+	margin-top: 18px;
+	margin-left: 21px;
+	text-align: center;
+}
+.footer h3{
+	font-size: 30px;
+	color: #AC3B61;
+}
+.logos a{
+height: auto;
+width: auto;
+margin: 26px;
+cursor: pointer;
+text-align: center;
+}
+img{
+	width: 150px;
+    display: flex;
+	padding: 2%;
+	justify-content: space-between;
+	text-align: center;
+}
+
+a i{
+	transition: all 0.3s linear;
+}
+a:hover i{
+	transform: scale(1.6);
+}
+
+.fa-instagram{
+	color: #e84393;
+}
+.fa-twitter{
+	color: #0097e6;
+}
+.fa-linkedin{
+	color: #0072b1;
+}
+.fa-facebook{
+	color: darkblue;
+}
+
+.fa-heart-o{
+	color: darkred;
+}
